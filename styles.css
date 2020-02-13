@@ -1,0 +1,89 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+  margin: 0px;
+  font-family: "Open Sans", sans-serif;
+}
+
+#main-body {
+  background-image: url('./assets/dolphin2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  color: orange;
+  overflow-y: scroll;
+  height: 100vh;
+}
+
+#form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  width: 600px;
+  height: 450px;
+  border-radius: 15px;
+  border: solid 8px white;
+  margin: 50px;
+  grid-column-start: 2;
+  grid-column-end: 6;
+}
+
+#header-2 {
+  margin-bottom: 50px;
+}
+
+.form-header {
+  margin: 20px;
+}
+
+.form-values {
+  width: 400px;
+  height: 30px;
+  margin: 10px;
+}
+
+.avatar-icon {
+  height: 200px;
+  width: 200px;
+  border-radius: 250px;
+  border: solid 8px white;
+  margin: 20px;
+}
+
+#dolphin-card-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 50px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+#aside-container {
+  background-color: orange;
+  color: white;
+  height: 100vh;
+  position: fixed;
+  width: 250px;
+}
+
+.dolphin-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 420px;
+  color: white;
+  padding: 15px;
+  margin: 20px;
+  border-radius: 500px;
+  text-align: center;
+}
+
+.card-body {
+  width: 90%;
+}
