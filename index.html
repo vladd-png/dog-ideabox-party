@@ -1,10 +1,49 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="./styles.css" type="text/css" rel="stylesheet">
     <meta charset="utf-8">
-    <title></title>
+    <title>IdeaBox but with Dolphins</title>
   </head>
   <body>
+    <main id='main-body'>
+      <aside id='aside-container'>
+        <h3>IdeaBox</h3>
+        <h4>Filter Starred Dolphins</h4>
+        <button type='button'>Show Starred Dolphins</button>
+      </aside>
+      <form id='form-container'>
+        <h1 class='form-header'>Welcome to Dolphin IdeaBox Party</h1>
+        <h2>An IdeaBox - But with Dolphins</h2>
+        <h2 class='form-header' id='header-2'>Here You Can Create new Dolphin Profiles</h2>
+        <input required class='form-values' id='name' type='text' placeholder='Dolphin Name' />
+        <input required class='form-values' id='bio' type='text' placeholder='Dolphin Bio' />
+        <select class='form-values' id='color'>
+          <option>Select a Color</option>
+          <option>BlueViolet</option>
+          <option>Orange</option>
+          <option>MediumSeaGreen</option>
+          <option>Indigo</option>
+          <option>ForestGreen</option>
+          <option>FireBrick</option>
+        </select>
+        <button id='make-dolphin' type='button'>Make it Happen Capt'n</button>
+      </form>
+      <section id='dolphin-card-section'>
+        <article style='background-color:blue;' class='dolphin-card'>
+          <img src='./assets/dolphin1.jpg' class='avatar-icon' />
+          <p class='card-body'>This is Forest. He's an adventurous, go-getter who prefers long walks in the ocean, and starfish. He always has a friendly smile and loves meeting new dolphins.</p>
+        </article >
+        <article style='background-color:purple;' class='dolphin-card'>
+          <img src='./assets/dolphin4.jpg' class='avatar-icon' />
+          <p class='card-body'>Don't Meet Cheryll, she's not very nice. This head of HR does not appreciate meeting new dolphins and prefers her personal space. 10/10 will bite.</p>
+        </article>
+      </section>
+      <section id='card-holder'>
+      </section>
+    </main>
+    <script src="Dolphin.js"></script>
+    <script src="main.js"></script>
 
   </body>
 </html>
